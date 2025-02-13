@@ -1,17 +1,13 @@
 const express = require("express");
 const app = express();
-const port = 3003;
+const port = 3000;
 
 // Middleware para parsear el cuerpo de las solicitudes en formato JSON
 app.use(express.json());
 app.use(express.static('public'));
 const modeloOrdenador = require('./models/ordenador');
 // Datos de ejemplo (simulando una base de datos)
-let items = [
-  { id: 1, name: "Ordenador 1" },
-  { id: 2, name: "Item 2" },
-  { id: 3, name: "Item 3" },
-];
+
 
 
 // Obtener todos los ítems
